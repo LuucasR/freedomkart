@@ -319,20 +319,21 @@ function App({ props }) {
           <div className="countup">
             <a href="#">
               +<CountUp end={30} /> <br></br>
-              <small>Latin American Artists</small>
+              <small className="smallmodified">Latin American Artists</small>
             </a>
           </div>
           <div className="countup">
             <a href="#">
               <small>Just</small> <br></br> <CountUp end={2000} /> <br></br>
-              <small>handmade NFTs</small>
+              <small className="smallmodified">handmade NFTs</small>
             </a>
           </div>
           <div className="countup">
             <a href="#">
               {" "}
               <CountUp end={10} />% <br></br>
-              <small>Support pro women fundactions</small>
+              <small >Support pro women </small>
+              <small >fundactions</small>
             </a>
           </div>
         </div>
@@ -498,6 +499,7 @@ function App({ props }) {
                 <div className="line"></div>
                 <div className="card">
                   <h3>Road 00</h3>
+               <br />
                   <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
                 </div>
               </div>
@@ -508,77 +510,85 @@ function App({ props }) {
                 <div className="line"></div>
                 <div className="card">
                   <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <br />
+                  <p>The search for unique, talented, and professional artists, capable of creating with handmade techniques the different paintings of Frida, inspired by her works and ideas.</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>02</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 02</h3>
+                  <br />
+                  <p>The careful selection of the best works, working with a unique level of quality, seeking to give the greatest variety in styles and techniques to the collection so that admiring it would be as gratifying as going to an art gallery or museum.</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>03</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 03</h3>
+                  <br />
+                  <p>To carry out a wide advertising campaign through the different social channels so that this new work in the world of <strong>NFTs</strong>  is known, spreading the message to as many people as possible, making the collection very valuable, far beyond its new and innovative proposal.</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>04</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 04</h3>
+                  <br />
+                  <p>The first pre-sale in which our first followers and believers can acquire their NFT at a much better price.</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>05</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 05</h3>
+                  <br />
+                  <p>The sale to the public of the 2000 NFTs</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>06</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 06</h3>
+                  <br />
+                  <p>The revelation which will be available after the official sale ends</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>07</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 07</h3>
+                  <br />
+                  <p>Support for foundations that seek to defend the rights of women and their real equality, as well as their protection from abuse or violence.</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="card-container">
-                <h2>01</h2>
+                <h2>08</h2>
                 <div className="line"></div>
                 <div className="card">
-                  <h3>Road 01</h3>
-                  <p>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</p>
+                  <h3>Road 08</h3>
+                  <br />
+                  <p>To spread the word about the work of these foundations through social media.</p>
                 </div>
               </div>
             </SwiperSlide>
