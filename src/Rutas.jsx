@@ -29,7 +29,7 @@ const esp =
   title: "Colección Freedomk NFT Art",
   subtitle: "La primera colección artesanal NFT inspirada en Frida K. pintada totalmente por artistas latinoamericanos.",
   buttonText: "Preventa de los primeros NFTs Freedomk  ART",
-  date: "Hasta el 15 de Septiembre",
+  date: "Hasta que los primeros 250 se vendan.",
   nftTitle: "Proyecto NFT",
   nftSubtitle: "Sobre la colección",
   nftText:  <>
@@ -62,6 +62,7 @@ También hemos recurrido a Frida porque creemos en la igualdad y en la necesidad
   designTitle: "Diseño y técnicas utilizadas",
   designText: "Se han usado técnicas al óleo, acrílico, acuarela y grafito. Logrando obras realistas, impresionistas, caricaturescas, minimalistas, surrealistas, hyper  realistas, pop art, cúbicas, modernas.",
   fridakTitle: "NFT FridaK",
+  buttonTextClicked: "Muy pronto",
   descrip_1: "Artistas Latinoamericanos",
   descrip_2: "Solo",
   descrip_3: "NFTs hechos a mano",
@@ -87,7 +88,7 @@ También hemos recurrido a Frida porque creemos en la igualdad y en la necesidad
   teamText_3: "Si actúas como si supieras lo que estás haciendo, puedes hacer lo que quieras F.K.",
   teamText_4: "Soy mi propia musa, soy la persona que mejor conozco. El tema que quiero conocer mejor F.K.",
   footerText_1: "La colección Freedomk Art es la primera colección amplia de NFTs en la que cada uno se ha hecho totalmente a mano sin usar patrones repetidos ni combinaciones de plantillas.",
-  footerText_2: "© 2022 Freedomk. All rights reserved",
+  footerText_2: "© 2022 FreedomK. All rights reserved",
   locate_href: "/"
 }
 
@@ -99,12 +100,13 @@ const en =
     image_url_children: "./img/esp.png",
     lang_top: "English",
     lang_bottom: "Spanish",
+    buttonTextClicked: "Coming soon",
     navbar_3: "Roadmaps",
     navbar_4: "Team",
     title: "FREEDOMK NFT ART Collection",
     subtitle: "The first NFT handmade collection inspired in Frida K. entirely painted by Latin American artists.",
     buttonText: "Pre-sale of the first Freedomk ART NFTs",
-    date: "Until Sep 15th",
+    date: "Until the first 250 are sold out.",
     langRes: "Ing",
     langResBottom: "Spanish",
     nftTitle: "NFT Project",
@@ -159,7 +161,7 @@ const en =
     descrip_2: "Just",
     descrip_3: "handmade NFTs",
     descrip_4: "Support pro women ",
-    descrip_5: "fundactions",
+    descrip_5: "fundations",
     roadmap_title: "Roadmaps Chronology of the launch",
     roadmap_1: <>The conceptualization and creation of an idea in Pro of Art in the world<strong> of NFTs</strong>, that would transmit values and beauty to the public.</>,
     roadmap_2: "The search for unique, talented, and professional artists, capable of creating with handmade techniques the different paintings of Frida, inspired by her works and ideas.",
@@ -182,6 +184,6 @@ const en =
     teamText_4: "I am my own muse, I am the person I know best. The subject I want to know better F.K.",
     
     footerText_1: "The Freedomk Art collection is the first comprehensive collection of NFTs in which each piece has been made entirely by hand without the use of repeated patterns or stencil combinations",
-    footerText_2: "© 2022 FridaK. All rights reserved",
+    footerText_2: "© 2022 FreedomK. All rights reserved",
     locate_href: "/#/esp"
 }

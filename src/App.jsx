@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom'
 import "./styles/main.css";
 // import './styles/footer.scss'
 
@@ -32,6 +33,7 @@ function App({ props }) {
     langRes,
     langResBottom,
     nftObjetiveTitle,
+    buttonTextClicked,
     nftObjetiveText,
     designTitle,
     designText,
@@ -78,7 +80,11 @@ function App({ props }) {
     } else {
       setLang(true);
     }
+
   };
+
+  const location = useLocation();
+  console.log(location.pathname);
 
 
   const handleMobileLang = () => {
@@ -88,6 +94,7 @@ function App({ props }) {
   const handleClick = () => {
     setClicked(!clicked);
   };
+  const [t, setT] = useState(buttonText)
 
   const routeLang = () => {
     window.location.href = locate_href;
@@ -99,25 +106,36 @@ function App({ props }) {
   }
 
   const handleFacebook = () => {
-    window.location.href =
-      "https://www.facebook.com/Freedomkart-110389825084974";
+       window.open('https://www.facebook.com/FreedomKnft','_blank')
   };
   const handleInstagram = () => {
-    window.location.href = "https://www.instagram.com/freedomk_art/";
+     window.open('https://www.instagram.com/freedomk_art/','_blank')
   };
   const handleTwitter = () => {
-    window.location.href = "https://twitter.com/freedomkart";
+     window.open('https://twitter.com/freedomkart','_blank')
   };
   const handleDiscord = () => {
-    window.location.href = "https://discord.gg/4DUmyfdm";
+     window.open('https://discord.gg/qFvVw32XeY','_blank')
   };
   const handleTelegram = () => {
-    window.location.href = "https://t.me/freedomk_art";
+    window.open('https://t.me/Freedomkchat','_blank')
   }
 
+ 
+  
   const handleMintingHref = () => {
-    window.location.href = "https://minting.freedomk.art/";
+    // window.location.href = "https://minting.freedomk.art/";
+    setT(buttonTextClicked);
   }
+
+  useEffect(() => {
+    if (t === buttonTextClicked) {
+      setTimeout(function () {
+        setT(buttonText);
+      }, 3000);
+    }
+  })
+
 
 
   console.log(clicked)
@@ -165,22 +183,21 @@ function App({ props }) {
             </div>
           </ul>
           <div class="logosredes">
-            <a href="#">
-              <img src="/svg/facebook.svg" alt="#" />
-            </a>
-            <a href="#">
-              <img onClick={handleInstagram} src="/svg/instagram.svg" alt="#" />
-            </a>
-            <a href="#">
-              <img onClick={handleTwitter} src="/svg/twitter.svg" alt="#" />
-            </a>
-            <a href="#">
-              <img
-                onClick={handleDiscord}
-                src="/svg/discord-logo.png"
-                alt="#"
-              />
-            </a>
+            <button className="button_transparent" onClick={handleTelegram}>
+              <img src="/svg/telegram.svg"/>
+            </button>
+             <button className="button_transparent" onClick={handleFacebook} >
+              <img className="imagenTelegram" src="/svg/facebook.svg"/>
+            </button> 
+            <button className="button_transparent" onClick={handleInstagram}>
+              <img  src="/svg/instagram.svg" />
+            </button>
+            <button className="button_transparent" onClick={handleTwitter} >
+              <img  src="/svg/twitter.svg" />
+            </button>
+            <button className="button_transparent" onClick={handleDiscord} >
+              <img src="/svg/discord-logo.png"/>
+            </button>
           </div>
         </nav>
 
@@ -192,37 +209,36 @@ function App({ props }) {
             <i onClick={handleMenu} class="fa-solid fa-bars hamburger"></i>
             <div className={!clicked ? "transition_menu none" : "nav_resposive-container"}>
               <li>
-                <a href="#">NFT Collection</a>
+                <a> <Link to="collection">NFT Collection</Link></a>
               </li>
               <li>
-                <a href="#">Presale</a>
+                <a target="_blank" href="https://minting.freedomk.art">Presale</a>
               </li>
               <li>
-                <a href="#">Roadmaps</a>
+                <a><Link to="roadmap">Roadmaps</Link></a>
               </li>
               <li>
-                <a href="#">Team</a>
+                <a><Link to="team">Team</Link></a>
               </li>
             </div>
           </ul>
 
           <div class="logosredes">
-            <a href="#">
-              <img src="/svg/facebook.svg" alt="#" />
-            </a>
-            <a href="#">
-              <img onClick={handleInstagram} src="/svg/instagram.svg" alt="#" />
-            </a>
-            <a href="#">
-              <img onClick={handleTwitter} src="/svg/twitter.svg" alt="#" />
-            </a>
-            <a href="#">
-              <img
-                onClick={handleDiscord}
-                src="/svg/discord-logo.png"
-                alt="#"
-              />
-            </a>
+          <button className="button_transparent" onClick={handleTelegram}>
+              <img src="/svg/telegram.svg"/>
+            </button>
+             <button className="button_transparent" onClick={handleFacebook} >
+              <img className="imagenTelegram" src="/svg/facebook.svg"/>
+            </button> 
+            <button className="button_transparent" onClick={handleInstagram}>
+              <img  src="/svg/instagram.svg" />
+            </button>
+            <button className="button_transparent" onClick={handleTwitter} >
+              <img  src="/svg/twitter.svg" />
+            </button>
+            <button className="button_transparent" onClick={handleDiscord} >
+              <img src="/svg/discord-logo.png"/>
+            </button>
           </div>
           <div className="container_langs">
             <p onMouseLeave={handleLang} onMouseEnter={handleLang}>
@@ -292,7 +308,7 @@ function App({ props }) {
             <div class="arrow-6"></div>
           </div>
 
-          <button onClick={handleMintingHref}>{buttonText}</button>
+          <button onClick={handleMintingHref}>{t}</button>
           <p>{date}</p>
         </section>
         <section class="header-bottom">
